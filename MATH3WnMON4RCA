@@ -1,6 +1,9 @@
 local library = loadstring(game:HttpGet("raw.githubusercontent.com/MONARCA26X/LIBRER-A/refs/heads/main/GNIK-INKGG", true))()
 
-local window = library:AddWindow("Private MyersDev", {
+local player = game.Players.LocalPlayer
+local displayName = player.DisplayName or player.Name
+
+local window = library:AddWindow("COSMIC PAID REWORK | Hello" .. displayName, {
     main_color = Color3.fromRGB(0, 0, 0),
     min_size = Vector2.new(650, 870),
     can_resize = true,
@@ -287,6 +290,7 @@ task.spawn(function()
 end)
 
 
+local AutoFarm = window:AddTab("Farm Op")
 
 -- Strength Op for High Ping (250ms+)
 getgenv()._AutoRepFarmEnabled = false
