@@ -1,4 +1,4 @@
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/MONARCA26X/LIBRER-A/refs/heads/main/GNIK-INKGG", true))()
+ocal library = loadstring(game:HttpGet("https://raw.githubusercontent.com/MONARCA26X/LIBRER-A/refs/heads/main/GNIK-INKGG", true))()
 
 local player = game.Players.LocalPlayer
 local displayName = player.DisplayName or player.Name
@@ -16,7 +16,7 @@ getgenv()._AutoRepFarmEnabled = false
 
 AutoFarm:AddSwitch("Strength Op (Minimum ping: 250ms+)", function(state)
     getgenv()._AutoRepFarmEnabled = state
-    warn("[Auto Rep Farm] Status:",state and "ON" or "OFF")
+    warn("[Auto Rep Farm] Status:", state and "ON" or "OFF")
 end)
 
 -- Configuration
